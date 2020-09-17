@@ -1,0 +1,82 @@
+/* Verwende die Maßeinheit "cm" anstelle von  "px".
+Section hat Werte Border, Border Radius, Text Shadow und Background Color.
+<h2> hat Werte Font Size 15mm, Text Shadow 1.5mm 1.5mm, Font Family Helvetica.
+Das HTML-Element p hatte eine Schriftgröße von 7mm.
+Die drei aufeinanderfolgenden Listen weisen jeweils folgende Werte font-size auf: 0.7cm, 1cm, 1.2cm. */
+
+
+body
+{
+    margin: 0;
+}
+section
+{
+    border: 0.05cm solid black ;
+    border-radius: 2mm;
+}
+section h2
+{
+    text-align: center;
+    font-size:15mm;
+    background: rgb(48, 51, 51);
+    margin-top: 0.3cm;
+    color: white;
+    /* text-shadow: 1.5mm 1.5mm white; */
+}
+article
+{
+    border: 2mm solid black ;
+    margin: 0.8cm ;
+    background: darkgray;
+    padding: 1cm;
+    border-radius:3mm;
+}
+article p
+{
+ /*    text-align: center; */
+    padding-right: 8cm;
+    font-size: 7mm;
+    color: white;
+}
+article h3
+{
+    font-size: 15mm;
+    color: white;
+}
+ li:nth-of-type(1)
+ {
+     font-size: 0.7cm;
+     background: white;
+ }
+ li:nth-of-type(2)
+ {
+     font-size: 1cm;
+     color: white;
+ }
+ li:nth-of-type(3)
+ {
+     font-size: 1.2cm;
+     background: white;
+ }
+ ul
+ {
+     list-style: none;
+ }
+ li:nth-of-type(1)::before
+ {
+     content: ” •“;
+     color:darkgray;
+     text-shadow: 15mm 10mm 12mm black;
+ }
+ li:nth-of-type(2)::before
+ {
+     content: ” •“;
+     color:gray;
+     text-shadow: 1cm 20mm 12mm black;
+ }
+ li:nth-of-type(3)::before
+ {
+     content: ” •“;
+     color:gray;
+     text-shadow: 2cm 3cm 4cm black;
+ }
